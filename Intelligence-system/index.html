@@ -1,27 +1,162 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ניהול ידיעות מודיעין - אמ"ן</title>
+    <title>SIGINT OPS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="site-header">
-        <!-- הדר האתר -->
-    </header>
+    <div class="dashboard-wrapper">
 
-    <!-- Main Dashboard Container -->
-    <main class="dashboard-container">
-        <!-- תוכן מרכזי -->
-    </main>
+        <!-- Top Header -->
+        <header class="top-header">
+            <div class="header-shield">
+                <img src="images/shield.svg" alt="Shield">
+            </div>
+            <div class="header-title">SIGINT OPS</div>
+            <div class="header-secure-badge">
+                <span class="green-dot"></span>
+                <span>SECURE • ONLINE</span>
+            </div>
+        </header>
 
-    <!-- Navigation Footer -->
-    <nav class="site-nav">
-        <!-- שורת ניווט -->
-    </nav>
+        <!-- Main Radar & Stats Card -->
+        <section class="radar-stats-card">
+            <!-- Radar Left -->
+            <div class="radar-box">
+                <div class="radar-circle">
+                    <div class="radar-sweep"></div>
+                    <div class="radar-line-h"></div>
+                    <div class="radar-line-v"></div>
+                    <div class="radar-ring r-1"></div>
+                    <div class="radar-ring r-2"></div>
+                    <div class="radar-ring r-3"></div>
+                    <div class="dot d-1"></div>
+                    <div class="dot d-2"></div>
+                    <div class="dot d-3"></div>
+                </div>
+            </div>
+
+            <!-- Numbers Right -->
+            <div class="metrics-box">
+                <div class="metric-item">
+                    <div class="metric-value">24</div>
+                    <div class="metric-label">ACTIVE SIGNALS</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value accent-green">07</div>
+                    <div class="metric-label">PRIORITY ALERTS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Buttons Row -->
+        <section class="action-buttons-row">
+            <button class="action-btn">
+                <img src="images/zap.svg" alt="Zap" class="btn-icon">
+                New Brief
+            </button>
+            <button class="action-btn">
+                <img src="images/code.svg" alt="Code" class="btn-icon">
+                Decode
+            </button>
+            <button class="action-btn">
+                <img src="images/rocket.svg" alt="Rocket" class="btn-icon">
+                Request Drone
+            </button>
+        </section>
+
+        <!-- Intelligence Cards Grid -->
+        <section class="cards-container">
+            <!-- Card 1 -->
+            <article class="intel-card border-pink">
+                <div class="card-top">
+                    <span class="badge badge-pink">CRITICAL</span>
+                    <span class="card-status">In Progress</span>
+                </div>
+                <div class="card-name">Operation Nightfall</div>
+                <div class="card-progress-row">
+                    <div class="progress-track">
+                        <div class="progress-fill fill-pink" style="width: 65%;"></div>
+                    </div>
+                    <span class="progress-pct">65%</span>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="intel-card border-yellow">
+                <div class="card-top">
+                    <span class="badge badge-yellow">HIGH</span>
+                    <span class="card-status">Analyzing</span>
+                </div>
+                <div class="card-name">Signal Intercept Alpha</div>
+                <div class="card-progress-row">
+                    <div class="progress-track">
+                        <div class="progress-fill fill-green" style="width: 40%;"></div>
+                    </div>
+                    <span class="progress-pct">40%</span>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="intel-card border-green">
+                <div class="card-top">
+                    <span class="badge badge-green">MEDIUM</span>
+                    <span class="card-status">Pending</span>
+                </div>
+                <div class="card-name">Asset Recovery</div>
+                <div class="card-progress-row">
+                    <div class="progress-track">
+                        <div class="progress-fill fill-green" style="width: 15%;"></div>
+                    </div>
+                    <span class="progress-pct">15%</span>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="intel-card border-yellow">
+                <div class="card-top">
+                    <span class="badge badge-yellow">HIGH</span>
+                    <span class="card-status">Active</span>
+                </div>
+                <div class="card-name">Cyber Defense Grid</div>
+                <div class="card-progress-row">
+                    <div class="progress-track">
+                        <div class="progress-fill fill-green" style="width: 80%;"></div>
+                    </div>
+                    <span class="progress-pct">80%</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- Threat Banner -->
+        <div class="threat-alert-banner">
+            <span class="alert-blinking-dot"></span>
+            <span class="alert-text">THREAT DETECTED</span>
+        </div>
+
+        <!-- Navigation Footer -->
+        <nav class="bottom-navigation">
+            <a href="#" class="nav-tab active">
+                <img src="images/activity.svg" alt="Activity" class="nav-icon-img">
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-tab">
+                <img src="images/radio.svg" alt="Radio" class="nav-icon-img">
+                <span>Feed</span>
+            </a>
+            <a href="#" class="nav-tab">
+                <img src="images/file-text.svg" alt="Brief" class="nav-icon-img">
+                <span>Brief</span>
+            </a>
+        </nav>
+
+        <!-- Help Question Mark -->
+        <div class="help-question-mark">?</div>
+
+    </div>
 
 </body>
 </html>
